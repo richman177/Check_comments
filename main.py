@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException  
 from pydantic import BaseModel 
 import joblib 
-import uvicorn
+import uvicorn 
 
 model = joblib.load("model_nb.pkl")
 vectorizer = joblib.load("vec.pkl")
