@@ -6,7 +6,7 @@ import uvicorn
 model = joblib.load("model_nb.pkl")
 vectorizer = joblib.load("vec.pkl")
 
-app = FastAPI(title="Review Classification API")
+app = FastAPI(title="Review Classification API") 
 
 
 class ReviewInput(BaseModel): 
