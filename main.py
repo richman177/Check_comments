@@ -9,7 +9,7 @@ vectorizer = joblib.load("vec.pkl")
 app = FastAPI(title="Review Classification API")
 
 
-class ReviewInput(BaseModel):
+class ReviewInput(BaseModel): 
     text: str
 
 
