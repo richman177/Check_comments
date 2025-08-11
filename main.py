@@ -14,7 +14,7 @@ class ReviewInput(BaseModel):
 
 
 @app.post("/predict")
-def predict_label(review: ReviewInput):
+def predict_label(review: ReviewInput): 
     try:
         text_vector = vectorizer.transform([review.text])
         prediction = model.predict(text_vector)[0] 
