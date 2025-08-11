@@ -20,4 +20,4 @@ def predict_label(review: ReviewInput):
         prediction = model.predict(text_vector)[0]
         return {"prediction": prediction} 
     except Exception as e: 
-        raise HTTPException(status_code=500, detail=str(e))
+        raise HTTPException(status_code=500, detail=str(e)) 
